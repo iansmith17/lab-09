@@ -27,6 +27,7 @@ router.put('/api/v1/:model/:id', handlePut);
 router.delete('/api/v1/:model/:id', handleDelete);
 
 // Route Handlers
+
 function handleGetAll(request,response,next) {
   request.model.get()
     .then( data => {
